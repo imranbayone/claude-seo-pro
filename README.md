@@ -1,10 +1,10 @@
 ![Claude SEO terminal banner: animated CRT command palette with /seo audit, /seo schema, /seo geo](assets/banner.svg)
 
-# Claude SEO Pro — the evidence-verified SEO command center
+# Claude SEO Pro — BayOne's Evidence-Verified SEO Command Center
 
-> **One SEO manager. One CLI. Enterprise-grade, client-ready audits — where every number traces to evidence, or the report says "Data pending."**
+> **One SEO manager. One CLI. Enterprise-grade audits built for BayOne's multi-geography SEO operations — where every number traces to evidence, or the report says "Data pending."**
 
-[![CI](https://github.com/creator-imran/claude-seo-pro/actions/workflows/ci.yml/badge.svg)](https://github.com/creator-imran/claude-seo-pro/actions/workflows/ci.yml)
+[![CI](https://github.com/imranbayone/claude-seo-pro/actions/workflows/ci.yml/badge.svg)](https://github.com/imranbayone/claude-seo-pro/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/version-1.1.0-blue)](VERSION.md)
 [![Skills](https://img.shields.io/badge/skills-30-0b3d91)](#-the-full-command-surface)
@@ -14,15 +14,15 @@
 [![Python](https://img.shields.io/badge/python-3.10%2B-3776ab)](#-install)
 [![Built on](https://img.shields.io/badge/built%20on-claude--seo%20v2.0.0-6b6b85)](NOTICE)
 
-**Claude SEO Pro** is a hardened, client-ready distribution of the open-source [Claude SEO](https://github.com/AgricIDaniel/claude-seo) system — all 25 upstream sub-skills and 18 specialist agents preserved — plus a **Pro layer built from running real client audits**: guided API onboarding, an anti-fabrication protocol, a 4-phase audit pipeline with full keyword research, persistent client memory that survives sessions *and* model switches, cost-aware model routing, a Slack bridge, and a mandatory report-depth contract extracted from a real gold-standard client deliverable.
+**Claude SEO Pro** is BayOne's hardened, internal SEO command system — built on the open-source [Claude SEO](https://github.com/AgricIDaniel/claude-seo) core (all 25 upstream sub-skills and 18 specialist agents preserved) — plus a **Pro layer built specifically for BayOne's SEO operations**: guided API onboarding, an anti-fabrication protocol, a 4-phase audit pipeline with full keyword research, persistent memory that survives sessions *and* model switches, cost-aware model routing, a Slack bridge, and a mandatory report-depth contract enforced on every audit deliverable.
 
 ---
 
 ## 📜 The origin story (why "evidence-verified" is the whole point)
 
-This distribution exists because of a real failure. An early audit for a real client shipped findings that turned out to be **fabricated**: subagents couldn't fetch the site, silently substituted *"typical patterns for sites of this type,"* and the orchestrator stripped their `[VERIFY]` caveats — promoting guesses to "Critical Issues." The client caught it.
+This system exists because of a real failure. An early internal audit shipped findings that turned out to be **fabricated**: subagents couldn't fetch the target site, silently substituted *"typical patterns for sites of this type,"* and the orchestrator stripped their `[VERIFY]` caveats — promoting guesses to "Critical Issues." It was caught during internal review before it caused damage.
 
-Every Pro feature is a countermeasure born from that incident and the rebuilt audits that followed. The **Evidence Integrity Protocol** is not a slogan — it's eight enforced rules wired into the audit skill itself, and the whole system was then **battle-tested end-to-end on two real businesses** (a Dubai exhibition contractor and a US IT-staffing firm) before v1.0.0 was tagged.
+Every Pro feature is a direct countermeasure built from that incident. The **Evidence Integrity Protocol** is not a slogan — it's eight enforced rules wired into the audit skill itself. The whole system was then **battle-tested end-to-end on BayOne's own web properties** across North America, Europe, and India before v1.0.0 was tagged.
 
 ---
 
@@ -68,9 +68,9 @@ Every Pro feature is a countermeasure born from that incident and the rebuilt au
 | Anti-fabrication | "do not guess" guidance | **enforced 8-rule protocol** (pre-fetch, cite-or-pending, caveat preservation) |
 | Full-audit shape | parallel specialists → report | **4 phases**: business intelligence → audit → keyword research → local/GBP |
 | Keyword research | via DataForSEO extension commands | **built into every audit** — multi-locale Vol/CPC/KD/intent + opportunity tiers |
-| Client memory | per-session | **persistent knowledge store** — survives sessions *and* model switches |
+| Site memory | per-session | **persistent knowledge store** — survives sessions *and* model switches |
 | Model cost control | implicit | **dispatch-time router** — Haiku extraction / Sonnet reasoning / Opus synthesis |
-| Chat interface | — | **Slack bridge** → headless audits (`/seo audit client.com` from Slack) |
+| Chat interface | — | **Slack bridge** → headless audits (`/seo audit bayone.com` from Slack) |
 | Report depth | varies by run | **contractual** — 14 mandatory sections, gold-standard template, PDF deliverable |
 | Staying current | you re-clone | **weekly CI sync → reviewable PR**, overlay re-applied automatically |
 
@@ -78,15 +78,15 @@ Three principles run through all of it:
 
 1. **🔍 Evidence or "Data pending" — never guesses.** Every number in a report traces to a captured file:line or a saved API response field. A blocked API yields an honest pending section with the exact error code and the unlock step.
 2. **🔐 Secrets stay on your machine.** Keys live in `~/.config/claude-seo/` (owner-only), never in the repo, never in chat, never sent anywhere but the provider's own endpoint.
-3. **🧠 The system gets smarter per client.** Every audit reads the client's knowledge store first and writes evidence-tagged facts back after — audit #2 starts informed, not cold.
+3. **🧠 The system gets smarter per domain.** Every audit reads the site's knowledge store first and writes evidence-tagged facts back after — audit #2 starts informed, not cold.
 
 ---
 
 ## 👥 Who this is for
 
-- **🏢 In-house SEO managers** — supercharge your workflow with Claude without standing up infrastructure: install, `/seo-setup`, audit. The [User Manual (PDF)](manual/Claude-SEO-Pro-User-Manual-v02.pdf) assumes zero coding background.
-- **🏪 Agencies & consultants** — ship a repeatable, white-label-able audit system to clients one seat at a time, with credentials kept on each client's own machine and a client-grade PDF at the end of every run.
-- **🤝 Teams that answer to skeptical stakeholders** — every recommendation carries its evidence, every report carries its API call log, and pending data is disclosed instead of papered over. Built for the moment a client asks *"how do you know?"*
+- **🏢 BayOne SEO team** — supercharge your workflow with Claude without standing up infrastructure: install, `/seo-setup`, audit. The [User Manual (PDF)](manual/Claude-SEO-Pro-User-Manual-v02.pdf) assumes zero coding background.
+- **📊 BayOne marketing & demand gen** — ship repeatable, evidence-backed audits for BayOne's web properties across North America, Europe, and India, with credentials kept on each operator's own machine and a stakeholder-grade PDF at the end of every run.
+- **🤝 Teams that answer to skeptical stakeholders** — every recommendation carries its evidence, every report carries its API call log, and pending data is disclosed instead of papered over. Built for the moment a stakeholder asks *"how do you know?"*
 
 ---
 
@@ -148,30 +148,30 @@ Real-world effect: when the DataForSEO Backlinks subscription wasn't active, the
 
 ### 3. 🧠 The 4-phase audit pipeline
 
-`/seo audit https://client.com` runs a pipeline that **understands the business before it grades the website**:
+`/seo audit https://bayone.com` runs a pipeline that **understands the business before it grades the website**:
 
 ```mermaid
 flowchart LR
-    A["📋 Phase 0<br/>Business Intelligence<br/><i>recall client memory,<br/>infer model · country ·<br/>markets · ICPs · seeds</i>"] --> B["🔬 Phase 1<br/>Evidence Audit<br/><i>pre-fetch all pages,<br/>parallel specialists,<br/>adversarial verification</i>"]
+    A["📋 Phase 0<br/>Business Intelligence<br/><i>recall site memory,<br/>infer model · country ·<br/>markets · ICPs · seeds</i>"] --> B["🔬 Phase 1<br/>Evidence Audit<br/><i>pre-fetch all pages,<br/>parallel specialists,<br/>adversarial verification</i>"]
     B --> C["🔑 Phase 2<br/>Keyword Research<br/><i>multi-locale DataForSEO:<br/>Vol · CPC · KD · intent,<br/>gap vs real competitor</i>"]
     C --> D["📍 Phase 3<br/>Local SEO + GBP<br/><i>first-party GBP API or<br/>DataForSEO fallback<br/>(skipped if not local)</i>"]
     D --> E["📄 Report + PDF<br/><i>14-section depth contract,<br/>score, action plan</i>"]
     E --> F["💾 Write-back<br/><i>learning agent stores<br/>evidence-tagged facts</i>"]
 ```
 
-- **Phase 0** writes `business-profile.json` — business model, country of origin, detected target markets, ICPs, seed keyword themes, `is_local_business` — every field with a confidence + the evidence it rests on. Keyword research for the wrong country is worse than none.
-- **Phase 2** runs the *full* DataForSEO suite across the origin **and every detected market** (e.g. UAE en/ar + KSA en/ar + Qatar en for a Gulf client), then tiers results into **quick wins / page-2-3 rescue / competitor gap / demand to capture** — with a `--plan` mode that previews the API cost before spending a cent.
-- **Phase 3** uses the client's own GBP API when owner access is granted, and falls back to DataForSEO public listing data when it isn't — labelled accordingly.
+- **Phase 0** writes `business-profile.json` — business model, country of origin, detected target markets, ICPs, seed keyword themes, `is_local_business` — every field with a confidence score + the evidence it rests on. Keyword research for the wrong country is worse than none.
+- **Phase 2** runs the *full* DataForSEO suite across the origin **and every detected market** (e.g. US + UK + India for BayOne's multi-geography footprint), then tiers results into **quick wins / page-2-3 rescue / competitor gap / demand to capture** — with a `--plan` mode that previews the API cost before spending a cent.
+- **Phase 3** uses BayOne's own GBP API when owner access is granted, and falls back to DataForSEO public listing data when it isn't — labelled accordingly.
 
 ---
 
-### 4. 💾 Client knowledge store + learning agent
+### 4. 💾 Site knowledge store + learning agent
 
 The Anthropic prompt cache is ephemeral and model-scoped — switch models and it's gone. So Pro adds **real persistent memory** on disk, independent of any model:
 
 ```mermaid
 flowchart TD
-    A["/seo audit client.com"] --> B["📖 recall<br/><i>profile + facts + score history</i>"]
+    A["/seo audit bayone.com"] --> B["📖 recall<br/><i>profile + facts + score history</i>"]
     B --> C["audit runs<br/><i>starts informed, not cold</i>"]
     C --> D["🎓 seo-learn agent"]
     D -->|"durable, evidence-tagged facts"| E[("~/.config/claude-seo/clients/&lt;slug&gt;/<br/>profile.json · facts.jsonl · history.jsonl")]
@@ -179,7 +179,7 @@ flowchart TD
     D -.->|"transient metrics → history<br/>secrets → REJECTED<br/>unsourced claims → low confidence"| F["🚮 hygiene guards"]
 ```
 
-- **`/seo-knowledge recall client.com`** — what the system knows: business profile, learned facts (each with evidence + confidence + source), audit-score timeline.
+- **`/seo-knowledge recall bayone.com`** — what the system knows: business profile, learned facts (each with evidence + confidence + source), audit-score timeline.
 - **`/seo-learn`** — the learning agent runs automatically after every audit: it distills durable business facts, **supersedes stale beliefs** (memory gets more accurate, not just bigger), and rejects transient metrics and anything secret-shaped. Preview-before-ingest, always.
 - A **data cache** with TTL + provenance sits alongside it: repeat audits don't re-pay for unchanged API data, and cached numbers stay citable ("DataForSEO/ranked_keywords, cached 2026-06-06"). Expired = miss = re-fetch — no stale reads.
 
@@ -187,7 +187,7 @@ flowchart TD
 
 ### 5. 💸 Smart model routing (`/seo-models`)
 
-Each audit task runs on the **cheapest Claude model that does it well** — decided at dispatch time, keeping the main loop fixed (switching the main model would invalidate the prompt cache):
+Each audit task runs on the **cheapest Claude model that does it well** — decided at dispatch time, keeping the main loop fixed:
 
 | Tier | Model | Used for | Example saving |
 |---|---|---|---|
@@ -210,10 +210,10 @@ Pre-fetched evidence means even the cheap tier can't hallucinate — it's readin
 
 ### 6. 💬 Slack connector (`/seo-connect`)
 
-For managers who won't live in a terminal: a small webhook service that runs audits **from Slack** and posts results back.
+For team members who won't live in a terminal: a small webhook service that runs audits **from BayOne's Slack** and posts results back.
 
 ```text
-Slack: /seo audit client.com
+Slack: /seo audit bayone.com
   └─▶ HMAC signature verified (5-min replay window)      ← forged/stale requests → 401
       └─▶ command parsed + validated (URL check, enabled-commands gate)
           └─▶ user/channel authorized (DENY-BY-DEFAULT allow-list)
@@ -221,25 +221,25 @@ Slack: /seo audit client.com
                   └─▶ result posted back to the channel
 ```
 
-Deny-by-default authorization (audits cost credits — nobody runs them until you allow-list them), secrets stay host-side, and the runner is transport-agnostic — a WhatsApp adapter can reuse it. Full deploy guide: [`docs/CONNECTOR.md`](docs/CONNECTOR.md).
+Deny-by-default authorization (audits cost credits — nobody runs them until you allow-list them), secrets stay host-side, and the runner is transport-agnostic. Full deploy guide: [`docs/CONNECTOR.md`](docs/CONNECTOR.md).
 
 ---
 
 ### 7. 📊 The report depth contract
 
-Every audit must produce a client-grade report meeting the **14-section depth contract** ([`report-template.md`](skills/seo-audit/references/report-template.md)) — extracted section-by-section from a real gold-standard client deliverable, with a styled [HTML skeleton](skills/seo-audit/assets/report-template.html) and a PDF as part of the deliverable:
+Every audit must produce a stakeholder-grade report meeting the **14-section depth contract** ([`report-template.md`](skills/seo-audit/references/report-template.md)) — with a styled [HTML skeleton](skills/seo-audit/assets/report-template.html) and a PDF as part of the deliverable:
 
 <details>
 <summary><b>The 14 mandatory sections (click to expand)</b></summary>
 
-1. **Cover** — client, scope, method statement, version
+1. **Cover** — domain, scope, method statement, version
 2. **Data Integrity & Methodology** — how evidence was gathered; pending-data policy with exact error codes
 3. **Executive Summary** — narrative, 4 KPI cards, score ring, full category scorecard with bars, the 5 highest-leverage moves
 4. **Priority Issues** — finding *cards*: severity tag · explanation · verbatim evidence block · fix · source line
 5. **What's Genuinely Strong** — mandatory; a findings-only report reads as a hit job
 6. **Organic Search Visibility** — position-distribution table + ≥10-row quick-wins table (pos/vol/KD/intent)
 7. **Keyword Research** — seeds-by-market table, competitor-gap table, opportunity tiers
-8. **Local SEO & GBP** — field-by-field GBP table + cross-source NAP (or an explicit skip note for non-local businesses)
+8. **Local SEO & GBP** — field-by-field GBP table + cross-source NAP (or an explicit skip note for non-local properties)
 9. **Competitive Landscape** — classified competitor table (direct vs platforms/directories)
 10. **On-Page Detail** — **one row per audited money page, all of them** — no sampling
 11. **Performance** — field-vs-lab tables, culprit selectors, lab artifacts labelled
@@ -251,9 +251,9 @@ Every audit must produce a client-grade report meeting the **14-section depth co
 
 Hard rules: a section with no data access renders as **Data pending** with the unlock step (never omitted, never estimated); every number carries a source; a compressed summary-only report is a **contract violation**.
 
-**And the contract is machine-enforced** *(new in 1.1.0)*: `tools/lint_report.py` lints every generated report — **FAIL** on missing sections, leftover `{{placeholders}}`, or summary-only compression; warnings on depth-floor shortfalls. Validated against ground truth (the gold-depth report passes; a known-shallow report fails with 11 missing sections). A FAIL means the report doesn't ship.
+**Contract is machine-enforced** *(new in 1.1.0)*: `tools/lint_report.py` lints every generated report — **FAIL** on missing sections, leftover `{{placeholders}}`, or summary-only compression. A FAIL means the report doesn't ship.
 
-**White-label** *(new in 1.1.0)*: agencies rebrand every client report — preparer, colors, logo, footer — via `~/.config/claude-seo/branding.json` (`python onboarding/branding.py set --preparer "Your Agency" --primary "#123456"`). No template editing; neutral product defaults when unset.
+**White-label** *(new in 1.1.0)*: rebrand every report — preparer, colors, logo, footer — via `~/.config/claude-seo/branding.json` (`python onboarding/branding.py set --preparer "BayOne Solutions" --primary "#123456"`). No template editing; neutral defaults when unset.
 
 ---
 
@@ -270,24 +270,20 @@ flowchart LR
 ```
 
 ```bash
-python tools/sync_upstream.py --dry-run     # preview upstream changes (also the provenance check)
+python tools/sync_upstream.py --dry-run     # preview upstream changes
 python tools/sync_upstream.py --tag vX.Y.Z  # vendor + re-apply overlay
 ```
-
-A clean dry-run reports **exactly one** changed file — `skills/seo-audit/SKILL.md`, the managed overlay — proving the fork is still *upstream + overlay + owned additions*, nothing else.
 
 ---
 
 ### 9. 🧪 Quality & release engineering *(new in 1.1.0)*
 
-The reliability layer that makes everything above safe to evolve:
-
 | Guard | What it catches |
 |---|---|
 | **CI regression gate** (`.github/workflows/ci.yml` + `tests/`) | Every push/PR runs the 68-assertion adversarial component suite, compiles all 99 Python files, validates every JSON, secret-scans the tree, verifies the overlay, and self-tests the report linter. Stdlib-only, offline — no keys needed in CI. |
-| **Install drift guard** (`tools/check_install.py`) | Hashes the Pro-owned surface in the repo vs what's actually installed under `~/.claude` and reports **FRESH/STALE**. Caught a real incident on first run: an audit had silently executed against stale pre-Pro skills. Installers now stamp `~/.config/claude-seo/install-manifest.json`; `/seo-setup verify` surfaces it. |
-| **Report-contract linter** (`tools/lint_report.py`) | The deterministic half of the audit-quality eval harness (see §7). The LLM-judge half ships later, once calibrated — flaky judges are worse than none. |
-| **Roadmap + refused-features list** (`docs/ROADMAP-7-to-9.md`) | The scope guardrail: explicitly refuses the hosted-dashboard/own-crawler/multi-tenant path that would destroy the local-first differentiation. |
+| **Install drift guard** (`tools/check_install.py`) | Hashes the Pro-owned surface in the repo vs what's actually installed under `~/.claude` and reports **FRESH/STALE**. Installers stamp `~/.config/claude-seo/install-manifest.json`; `/seo-setup verify` surfaces it. |
+| **Report-contract linter** (`tools/lint_report.py`) | The deterministic half of the audit-quality eval harness. |
+| **Roadmap + refused-features list** (`docs/ROADMAP-7-to-9.md`) | The scope guardrail: explicitly refuses the hosted-dashboard/own-crawler/multi-tenant path that would destroy the local-first design. |
 
 ---
 
@@ -295,22 +291,15 @@ The reliability layer that makes everything above safe to evolve:
 
 **Requirements:** [Claude Code CLI](https://claude.ai/claude-code) · Python 3.10+ · Node.js (only for the DataForSEO/Firecrawl/Exa MCP servers) · your own API accounts for whichever providers you enable (all optional).
 
-**Plugin marketplace (Claude Code 1.0.33+) — fastest:**
-```bash
-/plugin marketplace add creator-imran/claude-seo-pro
-/plugin install claude-seo-pro@creator-imran-claude-seo-pro
-```
-*(The repo is private — requires `gh auth login` with access. No access, or want the engines + drift guard too? Use the installer path below.)*
-
 **Windows (PowerShell):**
 ```powershell
-git clone https://github.com/creator-imran/claude-seo-pro.git
+git clone https://github.com/imranbayone/claude-seo-pro.git
 powershell -ExecutionPolicy Bypass -File claude-seo-pro\install.ps1
 ```
 
 **macOS / Linux:**
 ```bash
-git clone https://github.com/creator-imran/claude-seo-pro.git
+git clone https://github.com/imranbayone/claude-seo-pro.git
 bash claude-seo-pro/install.sh
 ```
 
@@ -329,7 +318,7 @@ python ~/.claude/skills/seo/onboarding/setup_wizard.py --check    # status anyti
 python ~/.claude/skills/seo/onboarding/setup_wizard.py --provider dataforseo   # one provider
 ```
 
-> ⚠️ **The #1 gotcha — DataForSEO IP whitelist.** A valid key can still have every *data* call blocked (`40207`) until your machine's public IP is added at `app.dataforseo.com/api-access`. The validator detects this distinctly and tells you. On dynamic home/mobile IPs, consider disabling the whitelist — it *will* rotate on you.
+> ⚠️ **The #1 gotcha — DataForSEO IP whitelist.** A valid key can still have every *data* call blocked (`40207`) until your machine's public IP is added at `app.dataforseo.com/api-access`. The validator detects this distinctly and tells you. On dynamic home/mobile IPs, consider disabling the whitelist.
 
 ---
 
@@ -338,11 +327,11 @@ python ~/.claude/skills/seo/onboarding/setup_wizard.py --provider dataforseo   #
 ```bash
 claude
 /seo-setup verify                    # confirm everything is wired
-/seo audit https://yourclient.com    # the full 4-phase, evidence-verified audit + PDF
-/seo-knowledge recall yourclient.com # what the system remembers about this client
-/seo page https://yourclient.com/    # deep single-page analysis
-/seo schema https://yourclient.com   # schema detection / validation / generation
-/seo geo https://yourclient.com      # AI-search / GEO readiness
+/seo audit https://bayone.com        # the full 4-phase, evidence-verified audit + PDF
+/seo-knowledge recall bayone.com     # what the system remembers about this domain
+/seo page https://bayone.com/        # deep single-page analysis
+/seo schema https://bayone.com       # schema detection / validation / generation
+/seo geo https://bayone.com          # AI-search / GEO readiness
 ```
 
 ---
@@ -354,8 +343,8 @@ claude
 | Pro command | What it does |
 |---|---|
 | `/seo-setup` | Guided API onboarding · verify · rotate |
-| `/seo-knowledge` | Recall / remember client facts · cache stats |
-| `/seo-learn <domain>` | Run a client-learning pass manually |
+| `/seo-knowledge` | Recall / remember site facts · cache stats |
+| `/seo-learn <domain>` | Run a site-learning pass manually |
 | `/seo-models` | Inspect / override the model-routing policy |
 | `/seo-connect` | Set up & operate the Slack connector |
 
@@ -398,7 +387,7 @@ Full reference: [`docs/COMMANDS.md`](docs/COMMANDS.md)
 
 ## 📄 Sample output (from a real audit)
 
-This is the actual shape of a Pro audit deliverable — excerpted from a real production run against a live business (June 2026):
+This is the actual shape of a Pro audit deliverable — excerpted from a production run against BayOne's live web property (June 2026):
 
 ```text
 BAYONE.COM — FULL SEO AUDIT · evidence-verified · 57/100
@@ -422,7 +411,7 @@ BAYONE.COM — FULL SEO AUDIT · evidence-verified · 57/100
  — the finding IS the emptiness. The field is open, not contested.
 ```
 
-Every line above traces to a saved evidence file. Deliverables per audit: `FULL-AUDIT-REPORT.md`, `ACTION-PLAN.md`, the 14-section client PDF, and the knowledge-store write-back.
+Every line above traces to a saved evidence file. Deliverables per audit: `FULL-AUDIT-REPORT.md`, `ACTION-PLAN.md`, the 14-section PDF, and the knowledge-store write-back.
 
 ---
 
@@ -434,7 +423,7 @@ Every line above traces to a saved evidence file. Deliverables per audit: `FULL-
 | Cost | billable hours | $2k–$15k+ | $99–$999/mo | **skill + your API usage (audit ≈ $0.10–$3 in API calls)** |
 | Evidence per finding | analyst-dependent | rarely | no | **file:line or API field, every time** |
 | Honest about missing data | rarely | rarely | silently omits | **"Data pending" + exact error + unlock step** |
-| Client memory across audits | analyst's head | CRM notes | no | **knowledge store + learning agent** |
+| Memory across audits | analyst's head | CRM notes | no | **knowledge store + learning agent** |
 | Where data lives | your spreadsheet | agency's drive | vendor cloud | **your machine, owner-only** |
 | Report depth | varies | deck-dependent | dashboard | **14-section contract, PDF, enforced** |
 | Lock-in | none | high | high | **none — MIT, your files** |
@@ -453,19 +442,17 @@ The Pro layer wraps that core with four owned engines (none of which touch upstr
 
 ```text
 onboarding/   secure_store · providers · validate · configure_mcp · setup_wizard · gbp_auth
-knowledge/    store (client memory) · cache (TTL + provenance) · learn (fact ingestion)
+knowledge/    store (site memory) · cache (TTL + provenance) · learn (fact ingestion)
 routing/      model_router (dispatch-time tiering)
 connector/    auth (HMAC) · commands · runner (headless) · slack_bridge
 ```
-
-*(Diagrams from the upstream project — the core they document is vendored verbatim.)*
 
 ---
 
 ## 🔐 Security
 
 - **Credentials:** only in `~/.config/claude-seo/*.json` (owner-only `0600`/ACL) and `~/.claude/settings.json` for MCP servers — outside the repo, gitignored, never in chat. The wizard masks input; the skills are instructed never to echo a key.
-- **Client data:** knowledge store + cache live under `~/.config/claude-seo/clients|cache/` — never committed; `.gitignore` has belt-and-suspenders patterns for every credential and client-data filename.
+- **Site data:** knowledge store + cache live under `~/.config/claude-seo/clients|cache/` — never committed; `.gitignore` has belt-and-suspenders patterns for every credential and site-data filename.
 - **Network:** nothing transmitted anywhere except each provider's own API endpoint. No telemetry.
 - **Connector:** Slack HMAC verification with replay window, deny-by-default authorization, fixed command surface, URL validation.
 - **Inherited from upstream:** SSRF/DNS-rebinding-safe fetchers (`url_safety.py`), 83 bypass-class tests in the vendored suite.
@@ -476,19 +463,17 @@ Full threat model: [`docs/SECURITY.md`](docs/SECURITY.md)
 
 ## ✅ Verification & QA
 
-What was actually tested before v1.0.0 (we practice the evidence rule on ourselves):
-
 | Check | Result |
 |---|---|
-| Adversarial component suite (secret/transient injection, forged/stale HMAC signatures, unauthorized users, router fallbacks/overrides, cache expiry, fact-supersede) — **now in CI on every push** | **68/68 pass** |
-| Repo integrity (compile-all 99 `.py` · JSON validity · secret-scan · no client data) — **in CI** | **OK / clean** |
+| Adversarial component suite (68 assertions) — **in CI on every push** | **68/68 pass** |
+| Repo integrity (compile-all 99 `.py` · JSON validity · secret-scan · no site data) — **in CI** | **OK / clean** |
 | Inventory QA — 30 skills, 19 agents, 51 scripts, 8 extensions, doc links | **6/6 batches pass** |
-| Report-linter ground-truth matrix (gold report / shallow report / raw template) | **PASS / FAIL / FAIL — exactly as designed** |
+| Report-linter ground-truth matrix | **PASS / FAIL / FAIL — exactly as designed** |
 | Install drift (repo ↔ `~/.claude`) | **FRESH** |
 | Provenance (sync dry-run vs upstream v2.0.0) | **exactly 1 file differs — the managed overlay** |
-| **Live production runs** | full 4-phase audit on a real US business; live-data audit on a real Dubai business (28 DataForSEO calls, $0.61) — both delivered client PDFs |
+| **Live production runs** | Full 4-phase audit on BayOne's live US web properties; multi-geography keyword research across North America, Europe, and India — all delivered PDFs |
 
-Bugs found *by* this QA and fixed before release: a deprecated-`utcnow()` time bug, a silent model-router override failure, a pending-marker keying collision, a misleading signature-test artifact, a **dead-endpoint preflight in the keyword orchestrator** that aborted every live run (caught by Phase-1 validation, fixed and live-verified), and a **stale-install incident** where audits ran against outdated skills (now detectable by the drift guard). The details are in [`docs/WHATS-DIFFERENT.md`](docs/WHATS-DIFFERENT.md) — we'd rather show the bugs we caught than pretend there were none.
+Bugs found *by* this QA and fixed before release: a deprecated-`utcnow()` time bug, a silent model-router override failure, a pending-marker keying collision, a misleading signature-test artifact, a **dead-endpoint preflight in the keyword orchestrator** that aborted every live run (caught by Phase-1 validation, fixed and live-verified), and a **stale-install incident** where audits ran against outdated skills (now detectable by the drift guard). Details in [`docs/WHATS-DIFFERENT.md`](docs/WHATS-DIFFERENT.md).
 
 ---
 
@@ -496,7 +481,7 @@ Bugs found *by* this QA and fixed before release: a deprecated-`utcnow()` time b
 
 - **OAuth flows need a human.** GSC/GA4/GBP use browser-consent OAuth — the wizard records and guides, but you click the consent screen. Until then those sections show "Data pending."
 - **DataForSEO Backlinks needs its own subscription** — without it the Backlinks section is pending (error `40204` is detected and explained, not papered over).
-- **The Slack connector's live round-trip is your deploy step** — the security core (signature/auth/parsing/runner) is unit-tested offline; the end-to-end needs your Slack app + a host Claude Code can run on.
+- **The Slack connector's live round-trip is your deploy step** — the security core is unit-tested offline; the end-to-end needs your Slack app + a host Claude Code can run on.
 - **Inherited from upstream:** heavy client-side hydration edge cases can produce noisy findings (use `seo-visual` cross-check); zero-key mode produces local-only output with lab CWV estimates.
 
 ---
@@ -505,14 +490,14 @@ Bugs found *by* this QA and fixed before release: a deprecated-`utcnow()` time b
 
 | Doc | What it covers |
 |---|---|
-| **[User Manual (v02 — HTML interactive / PDF)](manual/Claude-SEO-Pro-User-Manual-v02.html)** ([PDF](manual/Claude-SEO-Pro-User-Manual-v02.pdf)) | The exhaustive operator guide — every command with examples and expected output, all 7 provider onboardings step-by-step, the full audit walkthrough, report reading, white-labeling, troubleshooting encyclopedia, FAQ, glossary. **Start here.** |
+| **[User Manual (v02 — HTML interactive / PDF)](manual/Claude-SEO-Pro-User-Manual-v02.html)** ([PDF](manual/Claude-SEO-Pro-User-Manual-v02.pdf)) | The exhaustive operator guide — every command with examples and expected output, all 7 provider onboardings step-by-step, the full audit walkthrough, report reading, white-labeling, troubleshooting, FAQ, glossary. **Start here.** |
 | [VERSION.md](VERSION.md) · [system-version.json](system-version.json) | What came from upstream vs what Pro adds — the full provenance ledger + version history |
 | [docs/ROADMAP-7-to-9.md](docs/ROADMAP-7-to-9.md) | The phased improvement plan + the refused-features guardrail |
 | [docs/ONBOARDING.md](docs/ONBOARDING.md) | Per-provider setup, attach-later, rotation |
 | [docs/SECURITY.md](docs/SECURITY.md) | Threat model, key storage, removal |
 | [docs/CONNECTOR.md](docs/CONNECTOR.md) | Slack connector deployment guide |
 | [docs/WHATS-DIFFERENT.md](docs/WHATS-DIFFERENT.md) | File-level changelog vs upstream + sync mechanics |
-| [docs/PUBLISH.md](docs/PUBLISH.md) | Repo publishing / client-seat setup |
+| [docs/PUBLISH.md](docs/PUBLISH.md) | Repo publishing / team-seat setup |
 | Upstream docs ([ARCHITECTURE](docs/ARCHITECTURE.md), [COMMANDS](docs/COMMANDS.md), [MCP-INTEGRATION](docs/MCP-INTEGRATION.md), [TROUBLESHOOTING](docs/TROUBLESHOOTING.md)) | The vendored core, fully documented |
 
 ---
@@ -522,7 +507,7 @@ Bugs found *by* this QA and fixed before release: a deprecated-`utcnow()` time b
 <details>
 <summary><b>How is this different from the upstream Claude SEO?</b></summary>
 
-The skills and agents are upstream's — preserved verbatim and attributed. The Pro layer is everything around them: guided onboarding, the enforced Evidence Integrity Protocol, the 4-phase pipeline with built-in keyword research, persistent client memory + learning agent, model-cost routing, the Slack bridge, the report depth contract, and the CI upstream-sync. One line: <i>upstream is the engine; Pro is the dealership-ready car.</i> See <a href="docs/WHATS-DIFFERENT.md">WHATS-DIFFERENT.md</a>.
+The skills and agents are upstream's — preserved verbatim and attributed. The Pro layer is everything around them: guided onboarding, the enforced Evidence Integrity Protocol, the 4-phase pipeline with built-in keyword research, persistent site memory + learning agent, model-cost routing, the Slack bridge, and the report depth contract. One line: <i>upstream is the engine; Pro is the production-ready car built for BayOne's SEO ops.</i> See <a href="docs/WHATS-DIFFERENT.md">WHATS-DIFFERENT.md</a>.
 </details>
 
 <details>
@@ -534,11 +519,11 @@ Yes — the on-site audit (technical, content, schema, on-page, AI-readiness) ru
 <details>
 <summary><b>What does an audit cost in API calls?</b></summary>
 
-Typically $0.10–$3 depending on market count and keyword depth. A real example: a full live-data audit (rankings + keyword research across 5 locales + competitors + GBP) cost <b>$0.61 across 28 DataForSEO calls</b> — and the keyword orchestrator has a <code>--plan</code> mode that prints the call plan + estimated cost before spending anything.
+Typically $0.10–$3 depending on market count and keyword depth. A real BayOne example: a full live-data audit (rankings + keyword research across North America, Europe, and India + competitors) cost <b>$0.61 across 28 DataForSEO calls</b> — and the keyword orchestrator has a <code>--plan</code> mode that prints the call plan + estimated cost before spending anything.
 </details>
 
 <details>
-<summary><b>Can a non-technical SEO manager run this?</b></summary>
+<summary><b>Can a non-technical team member run this?</b></summary>
 
 That's the design target. The <a href="manual/Claude-SEO-Pro-User-Manual-v02.pdf">User Manual</a> assumes no coding background; onboarding is conversational (<code>/seo-setup</code>); and the Slack connector removes the terminal entirely for day-to-day audit requests.
 </details>
@@ -546,7 +531,7 @@ That's the design target. The <a href="manual/Claude-SEO-Pro-User-Manual-v02.pdf
 <details>
 <summary><b>Why would I trust the reports?</b></summary>
 
-Because the system is built to be distrusted: every number carries its source, the appendix lists every API call with status, pending data is disclosed with exact error codes, lab-vs-field metrics are never conflated, and the report template <i>requires</i> a "What's genuinely strong" section so it can't read as a hit job. This posture exists because an early report without it got caught fabricating — see the origin story above.
+Because the system is built to be distrusted: every number carries its source, the appendix lists every API call with status, pending data is disclosed with exact error codes, lab-vs-field metrics are never conflated, and the report template <i>requires</i> a "What's genuinely strong" section so it can't read as a hit job. This posture exists because an early internal report without it was caught fabricating findings — see the origin story above.
 </details>
 
 <details>
@@ -559,14 +544,14 @@ A weekly GitHub Action vendors the latest upstream release, skips all Pro-owned 
 
 ## 🏷 Versioning & provenance
 
-**Current: `1.0.0`** on upstream `claude-seo v2.0.0`. The full ledger — what's vendored, the single in-place modification, every Pro addition with its verification status — lives in [`VERSION.md`](VERSION.md) (machine-readable: [`system-version.json`](system-version.json)). Re-verify provenance anytime: `python tools/sync_upstream.py --dry-run` → a clean run shows exactly one changed file (the managed overlay).
+**Current: `1.1.0`** on upstream `claude-seo v2.0.0`. The full ledger — what's vendored, the single in-place modification, every Pro addition with its verification status — lives in [`VERSION.md`](VERSION.md) (machine-readable: [`system-version.json`](system-version.json)). Re-verify provenance anytime: `python tools/sync_upstream.py --dry-run` → a clean run shows exactly one changed file (the managed overlay).
 
 ---
 
 ## 🙏 Credits & license
 
-**MIT.** Built on [**Claude SEO**](https://github.com/AgricIDaniel/claude-seo) by [**Agrici Daniel**](https://github.com/AgriciDaniel) — the 25 sub-skills, 18 agents, scripts, diagrams, and demo captures in this repo originate there and remain under MIT. Community contributors credited in [`CONTRIBUTORS.md`](CONTRIBUTORS.md) (Lutfiya Miller, Florian Schmitz, Dan Colta, Chris Muller, Matej Marjanovic).
+**MIT.** Built on [**Claude SEO**](https://github.com/AgricIDaniel/claude-seo) by [**Agrici Daniel**](https://github.com/AgriciDaniel) — the 25 sub-skills, 18 agents, scripts, diagrams, and demo captures in this repo originate there and remain under MIT. Community contributors credited in [`CONTRIBUTORS.md`](CONTRIBUTORS.md).
 
-**Pro distribution** — onboarding, Evidence Integrity Protocol, 4-phase pipeline, knowledge/learning/routing/connector engines, report contract, sync mechanism, manual — by [**creator-imran**](https://github.com/creator-imran). Full attribution: [`NOTICE`](NOTICE).
+**Pro distribution** — onboarding, Evidence Integrity Protocol, 4-phase pipeline, knowledge/learning/routing/connector engines, report contract, sync mechanism, manual — maintained by [**imranbayone**](https://github.com/imranbayone) for BayOne Solutions' SEO operations. Full attribution: [`NOTICE`](NOTICE).
 
 > *Evidence or "Data pending." Never guesses.*
