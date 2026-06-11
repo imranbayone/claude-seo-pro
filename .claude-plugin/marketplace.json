@@ -1,12 +1,12 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
-  "name": "creator-imran-claude-seo-pro",
+  "name": "imranbayone-claude-seo-pro",
   "owner": {
-    "name": "creator-imran",
-    "url": "https://github.com/creator-imran"
+    "name": "imranbayone",
+    "url": "https://github.com/imranbayone"
   },
   "metadata": {
-    "description": "Claude SEO Pro - the evidence-verified SEO command center for Claude Code. A hardened, client-ready distribution of the MIT-licensed claude-seo system (all 25 upstream sub-skills + 18 agents preserved) plus a Pro layer: guided API onboarding with secure credential storage, an anti-fabrication Evidence Integrity Protocol, a 4-phase audit pipeline with built-in multi-locale keyword research, persistent per-client knowledge store with a learning agent, dispatch-time model-cost routing, a Slack connector, white-label client reports under a mandatory 14-section depth contract, and CI-gated releases."
+    "description": "Claude SEO Pro - the evidence-verified SEO command center for Claude Code. A hardened, client-ready distribution of the MIT-licensed claude-seo system (all 25+5 upstream sub-skills + 18+1 agents preserved) plus a Pro layer: guided API onboarding with secure credential storage, an anti-fabrication Evidence Integrity Protocol, a 4-phase audit pipeline with built-in multi-locale keyword research, persistent per-client knowledge store with a learning agent, dispatch-time model-cost routing, a Slack connector, white-label client reports under a mandatory 14-section depth contract, and CI-gated releases."
   },
   "plugins": [
     {
@@ -52,3 +52,4 @@
     }
   ]
 }
+
