@@ -1,4 +1,4 @@
-# Claude SEO: Universal SEO Analysis Skill
+﻿# Claude SEO: Universal SEO Analysis Skill
 
 ## Project Overview
 
@@ -201,8 +201,8 @@ Part of the Claude Code skill family:
 
 ## Distribution Notes (Claude SEO Pro fork)
 
-This repository is **Claude SEO Pro**, a client-ready distribution maintained at
-`https://github.com/creator-imran/claude-seo-pro` (private). It is a derivative of
+This repository is **Claude SEO Pro**, a stakeholder-ready distribution maintained at
+`https://github.com/imranbayone/claude-seo-pro` (private). It is a derivative of
 the MIT-licensed upstream `AgriciDaniel/claude-seo`. See `NOTICE` for attribution
 and `docs/WHATS-DIFFERENT.md` for the file-level changelog.
 

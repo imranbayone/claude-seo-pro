@@ -1,9 +1,9 @@
-{
+﻿{
   "product": "claude-seo-pro",
   "version": "1.1.0",
   "released": true,
   "date": "2026-06-06",
-  "maintainer": "creator-imran",
+  "maintainer": "imranbayone",
   "license": "MIT",
   "upstream": {
     "repo": "AgricIDaniel/claude-seo",
@@ -41,7 +41,7 @@
      "pending": ["live keyword fan-out EXECUTION (preflight fixed+verified in 1.1.0; merge stages are Phase-2)"]},
     {"feature": "report-depth-contract", "status": "verified", "since": "1.0.0",
      "paths": ["skills/seo-audit/references/report-template.md", "skills/seo-audit/assets/report-template.html"],
-     "note": "14 mandatory sections extracted from the gold-standard client report"},
+     "note": "14 mandatory sections extracted from the gold-standard audit report"},
     {"feature": "F1-knowledge-store-and-cache", "status": "verified", "since": "1.0.0",
      "paths": ["knowledge/store.py", "knowledge/cache.py", "knowledge/fsutil.py", "skills/seo-knowledge/"]},
     {"feature": "F2-client-learning-agent", "status": "verified", "since": "1.0.0",
@@ -97,6 +97,6 @@
     "provenance_dry_run": "clean - only the managed overlay differs",
     "live_production_runs": "2 real client audits (US 4-phase; Dubai live-data, 28 calls $0.61)",
     "pushed_to_github": true,
-    "repo": "https://github.com/creator-imran/claude-seo-pro"
+    "repo": "https://github.com/imranbayone/claude-seo-pro"
   }
 }

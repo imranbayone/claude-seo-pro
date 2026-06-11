@@ -1,7 +1,7 @@
-# Claude SEO Pro — System Version & Provenance
+﻿# Claude SEO Pro — System Version & Provenance
 
 **Product:** Claude SEO Pro · **Version:** `1.1.0` · **Date:** 2026-06-06
-**Maintainer:** [creator-imran](https://github.com/creator-imran)
+**Maintainer:** [imranbayone](https://github.com/imranbayone)
 **Built on (upstream):** [`AgricIDaniel/claude-seo`](https://github.com/AgricIDaniel/claude-seo) `@ v2.0.0` · MIT
 
 This file is the single source of truth for **what came from the source repo** versus
@@ -134,7 +134,7 @@ All additions are **owned files** (protected from upstream sync via
 ### 3.8 Distribution, docs & install
 - `README.md` (rewritten), `CLAUDE.md` (topology), `NOTICE` (MIT attribution),
   `.claude-plugin/plugin.json` + `marketplace.json` (rebranded for one-command
-  `/plugin marketplace add creator-imran/claude-seo-pro`), self-contained
+  `/plugin marketplace add imranbayone/claude-seo-pro`), self-contained
   `install.ps1`/`install.sh` (now stamping `install-manifest.json`),
   `publish-to-github.ps1` (with staged-secret guard), `docs/` (ONBOARDING, SECURITY,
   WHATS-DIFFERENT, PUBLISH, CONNECTOR, ROADMAP-7-to-9),
@@ -155,7 +155,7 @@ All additions are **owned files** (protected from upstream sync via
   gold-depth report PASSes, the known-shallow report FAILs, raw template FAILs.
   Mandatory pre-delivery step. Status: ✅. (LLM-judge half deferred until calibrated.)
 - **White-label branding** — `onboarding/branding.py` + `~/.config/claude-seo/branding.json`:
-  agency rebrand of client reports (preparer, colors, logo, footer) with neutral
+  white-label stakeholder reports (preparer, colors, logo, footer) with neutral
   defaults; report generation loads it as step 0. Status: ✅.
 - **Roadmap & scope guardrail** — `docs/ROADMAP-7-to-9.md`: phased plan with an explicit
   refused-features list (no SaaS dashboard / own crawler / multi-tenant / SLAs).
@@ -184,7 +184,7 @@ All additions are **owned files** (protected from upstream sync via
 
 | Version | Date | Summary |
 |---|---|---|
-| `1.1.0` | 2026-06-06 | **Hardening + quality release (Phase 1 + risk-free Phase 2).** Added: CI regression gate (`tests/` + `ci.yml`); install drift guard (`tools/check_install.py` + installer manifest stamp, wired into `/seo-setup verify`); white-label branding (`onboarding/branding.py` + report-template tokens); deterministic report-contract linter (`tools/lint_report.py`, mandatory pre-delivery, CI self-tested); plugin-marketplace distribution (rebranded `.claude-plugin/marketplace.json`, README one-command install); roadmap + refused-features guardrail (`docs/ROADMAP-7-to-9.md`); report depth contract (14 sections, extracted from the gold-standard client report) with HTML skeleton. Fixed: `keyword_research.py` dead-endpoint preflight (live-verified); `utcnow()` deprecations; stale-install incident (drift guard caught it). User Manual **v02** (exhaustive rewrite; supersedes v01). |
+| `1.1.0` | 2026-06-06 | **Hardening + quality release (Phase 1 + risk-free Phase 2).** Added: CI regression gate (`tests/` + `ci.yml`); install drift guard (`tools/check_install.py` + installer manifest stamp, wired into `/seo-setup verify`); white-label branding (`onboarding/branding.py` + report-template tokens); deterministic report-contract linter (`tools/lint_report.py`, mandatory pre-delivery, CI self-tested); plugin-marketplace distribution (rebranded `.claude-plugin/marketplace.json`, README one-command install); roadmap + refused-features guardrail (`docs/ROADMAP-7-to-9.md`); report depth contract (14 sections, extracted from the gold-standard audit report) with HTML skeleton. Fixed: `keyword_research.py` dead-endpoint preflight (live-verified); `utcnow()` deprecations; stale-install incident (drift guard caught it). User Manual **v02** (exhaustive rewrite; supersedes v01). |
 | `1.0.0` | 2026-06-06 | Initial Pro distribution (tag `v1.0.0`): vendored `claude-seo v2.0.0` + Evidence Integrity overlay + guided onboarding (7 providers) + 4-phase audit (BI, keyword research, local/GBP) + knowledge store/cache + learning agent + model routing + Slack connector + upstream-sync + User Manual v01. Verified by 68/68 adversarial assertions and two live client audits. Feature 5 (skills-enhancer) deferred by design. |
 
 > **How to re-verify provenance** ("is this still upstream + our overlay only?"):

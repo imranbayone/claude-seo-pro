@@ -1,13 +1,13 @@
-# publish-to-github.ps1
+﻿# publish-to-github.ps1
 # One-shot helper to create the private repo on GitHub and push this directory.
 # Run this from the claude-seo-pro folder on a machine where you can install tools.
 #
 #   powershell -ExecutionPolicy Bypass -File publish-to-github.ps1
 #   powershell -ExecutionPolicy Bypass -File publish-to-github.ps1 -Public
-#   powershell -ExecutionPolicy Bypass -File publish-to-github.ps1 -Repo "creator-imran/claude-seo-pro"
+#   powershell -ExecutionPolicy Bypass -File publish-to-github.ps1 -Repo "imranbayone/claude-seo-pro"
 
 param(
-    [string]$Repo = "creator-imran/claude-seo-pro",
+    [string]$Repo = "imranbayone/claude-seo-pro",
     [switch]$Public
 )
 

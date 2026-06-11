@@ -1,8 +1,8 @@
-# Publishing to GitHub (creator-imran)
+﻿# Publishing to GitHub (imranbayone)
 
 The build machine used to create this repo had **no `git` and no `gh` CLI**, so it
 could not push for you. Here's the exact path to get it onto
-`github.com/creator-imran/claude-seo-pro`. Two options.
+`github.com/imranbayone/claude-seo-pro`. Two options.
 
 ## Option A — one command (recommended)
 
@@ -13,7 +13,7 @@ On a machine where you can install software:
 winget install --id Git.Git -e
 winget install --id GitHub.cli -e
 
-# 2. Authenticate as creator-imran
+# 2. Authenticate as imranbayone
 gh auth login        # choose GitHub.com > HTTPS > login with browser
 
 # 3. From the claude-seo-pro folder, run the helper
@@ -33,9 +33,9 @@ cd claude-seo-pro
 git init -b main
 git add .
 git commit -m "Claude SEO Pro v1.0.0"
-gh repo create creator-imran/claude-seo-pro --private --source=. --remote=origin --push
+gh repo create imranbayone/claude-seo-pro --private --source=. --remote=origin --push
 # or, without gh: create the empty repo in the GitHub web UI, then:
-#   git remote add origin https://github.com/creator-imran/claude-seo-pro.git
+#   git remote add origin https://github.com/imranbayone/claude-seo-pro.git
 #   git push -u origin main
 ```
 
@@ -50,7 +50,7 @@ gh repo create creator-imran/claude-seo-pro --private --source=. --remote=origin
 ## Granting a client access (private repo)
 
 - Per-seat: **GitHub → repo → Settings → Collaborators → Add people**, or
-  `gh repo edit creator-imran/claude-seo-pro` / the API.
+  `gh repo edit imranbayone/claude-seo-pro` / the API.
 - For multiple clients, consider moving the repo into a dedicated GitHub **org**
   and managing access by team.
 

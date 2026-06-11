@@ -1,11 +1,11 @@
----
+﻿---
 name: seo-connect
 description: "Set up and operate the chat connector — run SEO audits from Slack (and later WhatsApp) instead of the terminal. Use when the user says Slack, chat connector, run from Slack, slash command, WhatsApp, or /seo-connect. The connector is a separate service; this skill helps configure and check it."
 user-invokable: true
 argument-hint: "[status|setup|test]"
 license: MIT
 metadata:
-  author: creator-imran
+  author: imranbayone
   version: "1.0.0"
   category: seo
 ---

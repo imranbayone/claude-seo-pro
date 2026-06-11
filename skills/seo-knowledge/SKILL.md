@@ -1,11 +1,11 @@
----
+﻿---
 name: seo-knowledge
 description: "Persistent, model-independent client knowledge for Claude SEO Pro. Recall what we know about a client, record new facts, and cache expensive API results across sessions and model switches. Use when the user says recall, what do we know about, remember this about the client, client memory, knowledge, or /seo-knowledge. The full audit reads and updates this automatically."
 user-invokable: true
 argument-hint: "[recall|remember|history|cache-stats] <domain> ..."
 license: MIT
 metadata:
-  author: creator-imran
+  author: imranbayone
   version: "1.0.0"
   category: seo
 ---

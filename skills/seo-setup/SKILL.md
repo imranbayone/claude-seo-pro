@@ -1,11 +1,11 @@
----
+﻿---
 name: seo-setup
 description: "Guided installation and API onboarding for Claude SEO Pro. Walks an SEO manager through securely configuring the DataForSEO, Google (PSI/CrUX/GSC/GA4), Firecrawl, and Exa APIs, verifies connectivity, and wires up MCP servers. Use when the user says setup, onboarding, configure APIs, add API keys, get started, install, or /seo-setup. Also handles 'verify' (status check) and 'rotate' (replace a key)."
 user-invokable: true
 argument-hint: "[verify | setup | rotate <provider>]"
 license: MIT
 metadata:
-  author: creator-imran
+  author: imranbayone
   version: "1.0.0"
   category: seo
 ---

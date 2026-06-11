@@ -1,4 +1,4 @@
-# Phase 0 — Business Intelligence (run FIRST, before any audit work)
+﻿# Phase 0 — Business Intelligence (run FIRST, before any audit work)
 
 > New in Claude SEO Pro. The moment a user runs a full audit, **before** crawling for
 > SEO issues, Claude builds a structured understanding of the business. Everything
@@ -10,7 +10,7 @@
 > continue into the audit + keyword research without pausing. Surface the inferred
 > profile in the final report's opening section so the manager can sanity-check it.
 
-## Step 0a — Read the client knowledge store FIRST (persistent memory)
+## Step 0a — Read the Site knowledge store FIRST (persistent memory)
 
 Before deriving anything, check what the system already knows about this client — that
 memory survives across sessions and model switches (see the `seo-knowledge` skill):

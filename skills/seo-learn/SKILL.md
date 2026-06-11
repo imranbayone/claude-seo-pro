@@ -1,11 +1,11 @@
----
+﻿---
 name: seo-learn
 description: "Run a client-business learning pass. Reads audit evidence and distills durable, evidence-tagged facts about the client into the persistent knowledge store, making the system more well-versed in that client over time. Use when the user says learn about this client, update what we know, learning pass, study the client, or /seo-learn. Runs automatically at the end of a full audit."
 user-invokable: true
 argument-hint: "[domain]"
 license: MIT
 metadata:
-  author: creator-imran
+  author: imranbayone
   version: "1.0.0"
   category: seo
 ---

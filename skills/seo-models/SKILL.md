@@ -1,11 +1,11 @@
----
+﻿---
 name: seo-models
 description: "Inspect and tune the model-routing policy — which Claude model each audit task runs on (Haiku extraction, Sonnet reasoning, Opus synthesis). Use when the user says model routing, which model, model policy, make it cheaper/faster, run everything on opus, force a model, or /seo-models. The audit orchestrator applies this policy automatically per task."
 user-invokable: true
 argument-hint: "[show|route <agent>|estimate|set ...|reset]"
 license: MIT
 metadata:
-  author: creator-imran
+  author: imranbayone
   version: "1.0.0"
   category: seo
 ---

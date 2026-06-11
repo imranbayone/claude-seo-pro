@@ -1,4 +1,4 @@
-![Claude SEO terminal banner: animated CRT command palette with /seo audit, /seo schema, /seo geo](assets/banner.svg)
+﻿![Claude SEO terminal banner: animated CRT command palette with /seo audit, /seo schema, /seo geo](assets/banner.svg)
 
 # Claude SEO Pro — BayOne's Evidence-Verified SEO Command Center
 
@@ -35,7 +35,7 @@ Every Pro feature is a direct countermeasure built from that incident. The **Evi
   - [Guided onboarding](#1--guided-onboarding-seo-setup)
   - [Evidence Integrity Protocol](#2--evidence-integrity-protocol)
   - [The 4-phase audit pipeline](#3--the-4-phase-audit-pipeline)
-  - [Client knowledge store + learning agent](#4--client-knowledge-store--learning-agent)
+  - [Site knowledge store + learning agent](#4--client-knowledge-store--learning-agent)
   - [Smart model routing](#5--smart-model-routing-seo-models)
   - [Slack connector](#6--slack-connector-seo-connect)
   - [The report depth contract](#7--the-report-depth-contract)

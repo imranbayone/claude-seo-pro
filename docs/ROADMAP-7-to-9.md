@@ -1,4 +1,4 @@
-# Roadmap: 7 → 9, and the line we will not cross
+﻿# Roadmap: 7 → 9, and the line we will not cross
 
 This document is both a plan and a **guardrail**. The single biggest risk to this
 project is not building too little — it's building the *wrong* "9/10" (a hosted SaaS)
@@ -68,7 +68,7 @@ each with its own design + checkpoint before build.
 | **AI-visibility tracking** (ChatGPT/Perplexity/AIO citation monitoring) | The category's defining 2026 capability; now table-stakes for agency tools | New live-API integration; substrate exists (DataForSEO AI-mentions + seranking/profound extensions). Owned skill → low structural risk |
 | **Scheduled monitoring + alerting** ("watch client weekly, alert on drops") | The #1 agency must-have; turns one-shot audits into retainers | Uses Claude Code cron/`/loop` + the Slack connector + drift snapshots. Owned |
 | **Audit-quality eval harness** — deterministic half ✅ DONE | The trust bar for *any* LLM product; catches "the audit got dumber" | ✅ `tools/lint_report.py` ships: FAILs on missing sections / leftover placeholders / summary-only compression; validated against ground truth (gold-depth report PASSes, the known-shallow report FAILs, raw template FAILs); wired into the contract's self-check + a CI self-test. The **LLM-judge half stays deferred** — flaky until calibrated (≥100 labeled examples) |
-| **Plugin-marketplace distribution** ✅ DONE | The ecosystem's front door; kills install friction | ✅ `.claude-plugin/marketplace.json` rebranded to `creator-imran-claude-seo-pro` (was upstream's verbatim); README documents `/plugin marketplace add creator-imran/claude-seo-pro`. Note: plugin install covers skills/agents; the engines + drift guard still come via the installer |
+| **Plugin-marketplace distribution** ✅ DONE | The ecosystem's front door; kills install friction | ✅ `.claude-plugin/marketplace.json` rebranded to `imranbayone-claude-seo-pro` (was upstream's verbatim); README documents `/plugin marketplace add imranbayone/claude-seo-pro`. Note: plugin install covers skills/agents; the engines + drift guard still come via the installer |
 
 ## ❌ Refused features — the line we will NOT cross
 
